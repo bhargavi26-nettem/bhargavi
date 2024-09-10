@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;height: 100vh;
+    
+}
+h1,p{
+    color: blueviolet;
+    font-size: 50px;font-style: italic;
+}
+
+.container {
+    text-align: center;
+}
+
+.choice {
+    margin-bottom: 20px;
+}
+
+.choice-button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10px;
+    color: violet;
+    background-color: navajowhite;
+}
+.choice-button:hover{
+    background-color: violet;
+    color: navajowhite;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 25px;
+    border: 1 px solid pink;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: gray;
+
+}
+
+.cell:hover {
+    background-color: goldenrod;
+}
+
+.restart {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-style: italic;
+    color: lightyellow;
+    background-color: lightcoral;
+}
+
+#message {
+    font-size: 1.2em;
+    font-weight: bold;
+}
